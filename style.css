@@ -1,0 +1,101 @@
+.root {
+  height: 800px;
+  border: 1px solid;
+  width: 900px;
+  margin: 0 auto;
+  position: relative;
+ background-image: url("./img/background-technology-electronic-vector-21160279.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+.heading{
+  color: rgb(255, 102, 0);
+  font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Rubik Beastly', cursive;
+font-family: 'Short Stack', cursive;
+font-family: 'Supermercado One', cursive;
+font-family: 'Syne Tactile', cursive;
+text-align: center;
+}
+/* .root img{
+    width: 100px;
+} */
+.p1,
+.p2,
+.p3,
+.p4,
+.p5,
+.p6,
+.p7 {
+  /* border: 1px solid; */
+  position: absolute;
+  left: 400px;
+  top: 550px;
+  transition-duration: .3s;
+  transition-timing-function: cubic-bezier(.15,1,.15,1);
+}
+.p1 {
+    z-index: 6;
+}
+.p2 {
+  top: 471px;
+  left: 421px;
+  z-index: 1;
+  transition-delay: .05s;
+}
+.p3 {
+  top: 431px;
+  left: 423px;
+  z-index: 2;
+  transition-delay: .10s;
+}
+.p4 {
+  top: 361px;
+  left: 88px;
+z-index: 3;
+transition-delay: .15s;
+}
+.p5 {
+  top: 344px;
+  left: 424px;
+  z-index: 4;
+  transition-delay: .20s;
+}
+.p7 {
+  top: 294px;
+  left: 433px;
+  z-index: 5;
+  transition-delay: .25s;
+}
+.root:hover .p2{
+    top:500px ;
+}
+.root:hover .p3{
+    top: 545px;
+}
+.root:hover .p4{
+    top: 493px;
+    animation: Fan .01s linear infinite;
+    animation-delay: .3s;
+    animation-timing-function:cubic-bezier(.15,-2,.15,-2) ;
+}
+.root:hover .p5{
+    top: 512px;
+    animation: Fan .015s linear infinite;
+    animation-delay: .3s;
+}
+.root:hover .p7{
+    top: 507px;
+    animation: Fan .015s linear infinite;
+    animation-delay: .3s;
+}
+@keyframes Fan {
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+    
+}
